@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+    <div class="container"></div>
+        <nav>
+            <img src="Cat/twin.jpg" class="logo">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Cat Burglar</p>
+            <h1>Hi, plij <span>fesh🐟</span><br>I'm Cateriro Catiret<br>Love from Tel Aviv</h1>
+        </div>
+    </div>
+</div>
+<!--------about--------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Cat/mmm.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>My name is Cateriro Catiret. I'm 33 years old. My house is in the northeast section of Morioh, where all the villas are, and I am not married. I work as an employee for the Kame Yu department stores, and I get home every day by 8 PM at the latest. I don't smoke, but I occasionally drink. I'm in bed by 11 PM, and make sure I get eight hours of sleep, no matter what. After having a glass of warm milk and doing about twenty minutes of stretches before going to bed, I usually have no problems sleeping until morning. Just like a baby, I wake up without any fatigue or stress in the morning. I was told there were no issues at my last check-up. I'm trying to explain that I'm a person who wishes to live a very quiet life. I take care not to trouble myself with any enemies, like winning and losing, that would cause me to lose sleep at night. That is how I deal with society, and I know that is what brings me happiness. Although, if I were to fight I wouldn't lose to anyone.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Cat Burglar</span><br>Professional cat stealer</li>
+                        <li><span>Professional Groomer</span><br>Best in the entire Cat Kingdom</li>
+                        <li><span>Shwarma</span><br>because its shwarma</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>10,000 BCE - Current</span><br>Adopted by humans</li>
+                        <li><span>'???' - 10,000 BCE</span><br>Under the tutelage of [REDACTED]</li>
+                        <li><span>Shwarma</span><br>cause i said its shwarma</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>1</span><br>Honored Burglar of the Cat Kingdom</li>
+                        <li><span>777</span><br>Professional Gambler at Dog Federation</li>
+                        <li><span>Shwarma</span><br>was meant to be</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Only the worthy shall know</h2>
+                <p>A shwarma will definitely not make me tell you</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="contacts">
+    <div class="container">
+        <h1 class="sub-title">My Socials</h1>
+        <div class="social-list">
+            <div>
+                <h2>Click if you dare</h2>
+                <p>real</p>
+                <a href="https://github.com/Crablovania">GitHub</a>
+                <a href="https://www.instagram.com/0_subhadeep_0/">Instagram</a>
+            </div>
+        </div>
+    </div>
+</div>
+    
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+</body>
+</html>
